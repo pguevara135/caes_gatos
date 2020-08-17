@@ -1,0 +1,13 @@
+#7ae428 - Verde 
+#14b25a - verde escuro - letra
+#e9ebee - Azul = titulo
+#fcfcfc - fundo
+
+Fonte
+
+Original ITC Eras
+
+<link href="https://fonts.googleapis.com/css2?family=Red+Rose&family=Roboto&display=swap" rel="stylesheet">
+
+font-family: 'Red Rose', cursive;
+font-family: 'Roboto', sans-serif;
