@@ -1,20 +1,87 @@
 * {
     margin: 0;
     padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+.borda {
+    border: 1px solid red;
+}
+
+.borda-azul {
+    border: 2px solid blue;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
 }
 /* font-family: 'Red Rose', cursive; =  titulos */
 /* font-family: 'Roboto', sans-serif; = Texto */
 .container {
-    background-color: #fcfcfc;
-    font-family: 'Roboto', sans-serif; 
- }
- 
- h1, h2, h3, h4, h5, h6 {
-    font-family: 'Red Rose', cursive;
- }
+    background: url(../images/fundo.jpg);
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
 
- .barra {
-     width: 100%;
-     height: 100px;
-     background: url(../images/barra_patas_original.jpg);
- }
+.altura {
+     height: 100vh;
+}
+ 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Red Rose', cursive;
+}
+
+.principal {
+    border: 1px solid yellow;
+    background-color: yellow;
+}
+
+.img-title {
+    width: 50%;
+    height: 50%;
+}
+
+.zoetis {
+    width: 25%;
+    height: 25%;
+}
+
+.barra-cabecalho {
+    /* display: flex; */
+    width: 100%;
+    background-image: url(../images/barra_patas_original.jpg);   
+}
+
+.cao {
+    float: left;
+    position: absolute;
+    width: 10%;
+    left: 18%;
+    top: -110%;
+    z-index: 1;
+}
+
+.gato {
+    float: right;
+    position: absolute;
+    width: 7%;
+    left: 71%;
+    top: -110%;
+}
+
+.altura {
+    widows: 7%;
+    height: 10vh;
+    background-color: brown;
+}
