@@ -1,16 +1,12 @@
-* {
-    margin: 0;
+*{
     padding: 0;
-    font-size: 100%;
-    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
 }
 
-.borda {
-    border: 1px solid red;
-}
-
-.borda-azul {
-    border: 2px solid blue;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Red Rose', cursive;
 }
 
 a {
@@ -22,66 +18,51 @@ ul {
 }
 
 img {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    display: block;
 }
-/* font-family: 'Red Rose', cursive; =  titulos */
-/* font-family: 'Roboto', sans-serif; = Texto */
+
+.borda_red {
+    border: 2px solid red;
+}
+
+.borda_blue {
+    border: 2px solid blue;
+}
+
 .container {
-    background: url(../images/fundo.jpg);
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-    border: 1px solid black;
+    max-width: 1200px;
+    display: grid;
+    grid-template-rows: 30vh 60vh 10vh;
+    margin: 0 auto;
+    background-image: url(../images/fundo.jpg);
 }
 
-.altura {
-     height: 100vh;
-}
- 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Red Rose', cursive;
+/* Cabecalho */
+
+.cabecalho {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-items: center;
+    align-items: center;
 }
 
-.principal {
-    border: 1px solid yellow;
-    background-color: yellow;
+.logo {
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
-.img-title {
-    width: 50%;
-    height: 50%;
+.texto_header {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.fone_title {
+    grid-row: 1/2;
+    line-height: 1.5rem;
 }
 
 .zoetis {
-    width: 25%;
-    height: 25%;
-}
-
-.barra-cabecalho {
-    /* display: flex; */
-    width: 100%;
-    background-image: url(../images/barra_patas_original.jpg);   
-}
-
-.cao {
-    float: left;
-    position: absolute;
-    width: 10%;
-    left: 18%;
-    top: -110%;
-    z-index: 1;
-}
-
-.gato {
-    float: right;
-    position: absolute;
-    width: 7%;
-    left: 71%;
-    top: -110%;
-}
-
-.altura {
-    widows: 7%;
-    height: 10vh;
-    background-color: brown;
+    grid-row: 2/3;
+    
 }
