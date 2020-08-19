@@ -1,8 +1,8 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    font-size: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -32,8 +32,9 @@ img {
 
 .container {
     max-width: 1200px;
+    box-sizing: border-box;
     display: grid;
-    grid-template-rows: 30vh 60vh 10vh;
+    grid-template-rows: 20vh 10vh 60vh 10vh;
     margin: 0 auto;
     background-image: url(../images/fundo.jpg);
 }
@@ -41,20 +42,24 @@ img {
 /* Cabecalho */
 
 .cabecalho {
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     justify-items: center;
-    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .logo {
-    grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row: 1/3;
+    padding: 2% 0 0 2%;
 }
 
 .texto_header {
-    grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row: 1/3;
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 11%;
 }
 
 .fone_title {
@@ -64,5 +69,15 @@ img {
 
 .zoetis {
     grid-row: 2/3;
-    
+}
+
+@media (max-width: 700px) {
+    * {
+        font-size: 0.7rem;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 1.3rem;
+    }
+
+
 }
