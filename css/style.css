@@ -1,6 +1,9 @@
 * {
   padding: 0;
   margin: 0;
+}
+
+body {
   font-family: "Roboto", sans-serif;
   font-size: 100%;
   box-sizing: border-box;
@@ -13,6 +16,7 @@ h4,
 h5,
 h6 {
   font-family: "Red Rose", cursive;
+  color: #14b25a;
 }
 
 a {
@@ -28,6 +32,8 @@ img {
   display: block;
 }
 
+/* visualizacao */
+
 .borda_red {
   border: 2px solid red;
 }
@@ -40,6 +46,132 @@ img {
   background-color: khaki;
 }
 
+/* configuracao pagina */
+
+.container {
+  display: grid;
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  box-sizing: border-box;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 25vh 10vh auto 10vh;
+  grid-gap: 1%;
+  background-image: url(../images/fundo.jpg);
+  box-shadow: 3px 8px 15px #14b25a;
+}
+
+/* cabecalho */
+.cabecalho {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  align-items: center;
+}
+
+.logo {
+  grid-column: 1/2;
+  grid-row: 1/5;
+}
+
+.texto_header {
+  grid-column: 2/3;
+  grid-row: 1/5;
+  padding: 7%;
+}
+
+.fone_title {
+  grid-column: 3/4;
+  grid-row: 1/4;
+}
+
+.fone_title p {
+  padding-bottom: 10%;
+}
+
+.fone_title img {
+  float: left;
+}
+
+.zoetis {
+  grid-column: 3/4;
+  grid-row: 4/5;
+  margin: auto;
+}
+
+.menu {
+  grid-column: 1/4;
+  grid-row: 2/3;
+}
+
+.menu {
+  text-align: center;
+  align-self: center;
+  background-image: url(../images/barra_patas_original.jpg);
+}
+
+.menu ul li {
+  display: inline-flex;
+  padding: 2%;
+}
+
+.principal {
+  grid-column: 1/4;
+  grid-row: 3/4;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  grid-gap: 1%;
+}
+
+.contexto {
+  
+}
+
+.lateral {
+  
+}
+
+.rodape {
+  grid-column: 1/4;
+  grid-row: 4/5;
+}
+
+@media (max-width: 700px) {
+  body {
+    font-size: 0.8rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    grid-template-rows: 20vh 7vh auto 5vh;
+  }
+
+  .fone_title {
+    font-size: 10px;
+  }
+
+  .zoetis {
+    grid-column: 3/4;
+    grid-row: 4/5;
+    margin: auto;
+  }
+
+  .zoetis img {
+    width: 60%;
+  }
+}
+
+/*
 .container {
   max-width: 1200px;
   height: 100vh;
@@ -49,14 +181,14 @@ img {
   margin: 0 auto;
   background-image: url(../images/fundo.jpg);
   grid-gap: 2%;
-}
+}*/
 
 /* Cabecalho */
-
+/*
 .cabecalho {
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: 20vh 10vh;
   justify-items: center;
   margin-top: 1%;
@@ -112,9 +244,10 @@ img {
 .zoetis img {
   width: 30%;
   margin-left: 50%;
-}
+}*/
 
 /* Separa cabecalho do corpo */
+/*
 .menu {
   background-image: url(../images/barra_patas_original.jpg);
   text-align: center;
@@ -186,4 +319,4 @@ img {
   .cabecalho {
     grid-template-rows: 15vh 5vh;
   }
-}
+}*/
