@@ -27,3 +27,25 @@
 .sobre p {
     text-align: justify;
 }
+
+button {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    background: green;
+    color: white;
+    box-shadow: 0 5px 5px #006000;
+}
+
+button:hover {
+    background: #006000;
+    box-shadow: 0 5px 5px #003f00;
+}
+
+button:active {
+    position: relative;
+    top: 5px;
+}
